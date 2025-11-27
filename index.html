@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <!-- links for NES.css as from github repo -->
+        <link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css">
+        <!-- minify -->
+        <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+        <!-- latest -->
+        <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+        <!-- core style only -->
+        <link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+        <link href="dist/rpgui.css" rel="stylesheet" type="text/css" >
+        <script src="dist/rpgui.js"></script>
+        <script src="index.js"></script>
+
+    </head>
+
+    <body style="background-color: #F2E5CB;">
+        <div class="nes-container with-title is-centered" style="margin: 30px;">
+            <p class="title" style="background-color: #F2E5CB;">Tim Smith-Buisset's Portfolio</p>
+
+            <button type="button" class="nes-btn" onclick="window.location.href='index.html'">Home</button>
+            <button type="button" class="nes-btn is-success" onclick="window.location.href='games.html'">Games</button>
+            <button type="button" class="nes-btn is-warning">Links</button>
+            <button type="button" class="nes-btn is-error">About Me</button>
+
+        </div>
+        <div class="nes-container with-title is-left" style="margin: 30px;">
+            <p class="title" style="background-color: #F2E5CB;">
+                My Coding Arsenal:
+            </p>
+
+            <a href="#" class="nes-badge">
+                <span class="is-dark">Java</span>
+            </a>
+            <a href="#" class="nes-badge">
+                <span class="is-dark">Spring</span>
+            </a>
+            <a href="#" class="nes-badge">
+                <span class="is-dark">PostGreSQL</span>
+            </a>
+            <a href="#" class="nes-badge">
+                <span class="is-dark">HTML</span>
+            </a>
+            <a href="#" class="nes-badge">
+                <span class="is-dark">CSS</span>
+            </a>
+            <a href="#" class="nes-badge">
+                <span class="is-dark">JavaScript</span>
+            </a>
+            <a href="#" class="nes-badge">
+                <span class="is-dark">Vue</span>
+            </a>
+            <a href="#" class="nes-badge">
+                <span class="is-dark">VScode</span>
+            </a>
+        </div>
+        <div class="nes-container with-title is-left" style="margin: 30px;">
+            <p class="title" style="background-color: #F2E5CB;">
+                Simple Event Listener...
+            </p>
+            <button type="button" class="nes-btn is-primary" onclick="shakeEightBall()"
+            style="margin-bottom: 20px;">8Ball</button>
+            <img src="assets/8ball.png"
+            style="width: 50px; height: auto; margin-bottom: 20px;">
+            <textarea id="textarea_field" class="nes-textarea">Shake the Magic Eight Ball!</textarea>
+        </div>
+
+    </body>
+
+</html>

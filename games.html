@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <!-- links for NES.css as from github repo -->
+        <link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css">
+        <!-- minify -->
+        <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+        <!-- latest -->
+        <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+        <!-- core style only -->
+        <link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+        <link href="dist/rpgui.css" rel="stylesheet" type="text/css" >
+        <script src="dist/rpgui.js"></script>
+
+    </head>
+    <body style="background-color: #F2E5CB;">
+        <div class="nes-container with-title is-centered" style="margin: 30px;">
+            <p class="title" style="background-color: #F2E5CB;">Tim Smith-Buisset's Portfolio</p>
+
+            <button type="button" class="nes-btn" onclick="window.location.href='index.html'">Home</button>
+            <button type="button" class="nes-btn is-success" onclick="window.location.href='games.html'">Games</button>
+            <button type="button" class="nes-btn is-warning">Links</button>
+            <button type="button" class="nes-btn is-error">About Me</button>
+
+        </div>
+        <div class="nes-container with-title is-centered" style="margin: 30px;">
+            <p class="title" style="background-color: #F2E5CB;">Choose a Game</p>
+
+            
+            <label>
+                <input type="checkbox" id="toggle2048" class="nes-checkbox"/>
+                <span>2048</span>
+            </label>
+            <label>
+                <input type="checkbox" id="toggleSudoku" class="nes-checkbox"/>
+                <span>Sudoku</span>
+            </label>
+        </div>
+
+        <iframe id="sudoku" 
+            src="https://sudokutim.netlify.app/" 
+            width="100%" 
+            height="800px"
+            style="border: none; display: none;">
+        </iframe>
+
+        <iframe id="twentyFortyEight"
+            src="https://2048tim.netlify.app/" 
+            width="100%" 
+            height="800px"
+            style="border: none; display: none;">
+        </iframe>
+
+        <script src="index.js"></script>
+
+    </body>
+</html>
